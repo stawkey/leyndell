@@ -8,49 +8,42 @@ This application was developed as part of the "Introduction to Web Applications"
 
 ## Overview
 
-This project is a functional e-commerce platform built with a modern JavaScript stack. It allows users to browse products, register and log in, view their order history, and more.
+This project is a functional e-commerce platform. It allows users to browse products, register and log in, view their order history, and more.
 
-## Features
-
-Our e-commerce platform has the following functionalities:
-
-*   **Navigation:** Easy-to-use Navbar
-*   **Homepage:** Engaging landing page to welcome users and showcase the newest products
-*   **User Authentication:** Secure user registration and login system
-*   **Order History:** Users can track their past orders
-*   **Search Functionality:** Robust search bar to find products quickly
-*   **Product Pages:** Detailed pages for each product
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dece5c6f-e7f4-49bb-8c49-2b014a0dae96" width="30%" />
+  <img src="https://github.com/user-attachments/assets/104ef1bb-8679-4344-8f9d-5b4d06b76ee8" width="30%" />
+  <img src="https://github.com/user-attachments/assets/2e9102a8-d4bc-43a3-998c-0609e52f079e" width="30%" />
+</p>
 
 ## Tech Stack
 
-**Backend:**
 *   Node.js with Express.js
 *   MongoDB with Mongoose for database management
-*   JSON Web Tokens (JWT) for authentication (`express-jwt`, `jsonwebtoken`)
-*   `bcrypt` for password hashing
-*   `cors` for handling Cross-Origin Resource Sharing
-*   `cookie-parser` for managing cookies
-*   `dotenv` for environment variable management
-
-**Frontend:**
 *   React with Vite
-*   `react-router-dom` for client-side routing
 *   `axios` for making HTTP requests
 *   `@fontawesome` for icons
 
-**Common:**
-*   `crypto` for cryptographic functionalities
-
 ## Getting Started
 
-To get the project up and running on your local machine, follow these setup instructions:
+To run the project do the following steps:
 
-### Prerequisites
+### Option 1: Using Docker
 
-Ensure you have Node.js and npm installed.
-A MongoDB instance should be running and accessible.
+If you have Docker installed, you can build and run the application using:
 
-### Installation & Setup
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/stawkey/leyndell.git
+    cd leyndell
+    ```
+
+2.  **Build and run with Docker Compose:**
+    ```bash
+    docker-compose up --build -d
+    ```
+
+### Option 2: Manual installation & setup for development
 
 1.  **Clone the repository:**
     ```bash
@@ -59,7 +52,6 @@ A MongoDB instance should be running and accessible.
     ```
 
 2.  **Backend Setup:**
-    Navigate to the `backend` folder:
     ```bash
     cd backend
     npm install
@@ -76,7 +68,6 @@ A MongoDB instance should be running and accessible.
     ```
 
 3.  **Frontend Setup:**
-    Navigate to the `frontend` folder:
     ```bash
     cd ../frontend
     npm install
@@ -86,4 +77,4 @@ A MongoDB instance should be running and accessible.
     npm run dev
     ```
 
-Once both frontend and backend servers are running, you should be able to access the application in your browser (usually at `http://localhost:5173`).
+Once both frontend and backend servers are running, you should be able to access the website in your browser at `http://localhost:5173`.
